@@ -9,7 +9,7 @@ import calculadora from '../.'
 
 test('multiplicacao', t => {
 	const total = multiply(10, 5)
-	t.is(total, 2)
+	t.is(total, 50)
 })
 
 test('divisao', t => {
