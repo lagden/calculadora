@@ -1,9 +1,9 @@
 'use strict'
 
 import test from 'ava'
-import soma from '../app/modules/soma'
-import subtracao from '../app/modules/subtracao'
-import calculadora from '../app/calculadora'
+import soma from '../modules/soma'
+import subtracao from '../modules/subtracao'
+import calculadora from '../.'
 
 test('soma', t => {
 	const total = soma(2, 3, 4)
