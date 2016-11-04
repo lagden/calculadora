@@ -3,11 +3,11 @@
 const soma = require('./modules/soma')
 const subtracao = require('./modules/subtracao')
 
-function calculadora(number) {
-	const calc = fn => (...n) => calculadora(fn(...[number].concat(n)))
+function calculadora(total = 0) {
+	const calc = fn => (...n) => calculadora(fn(...[total].concat(n)))
 	const plus = calc(soma)
 	const less = calc(subtracao)
-	return {number, plus, less}
+	return {total, plus, less}
 }
 
 module.exports = calculadora
