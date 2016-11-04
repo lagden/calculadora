@@ -30,5 +30,10 @@
       "node"
     ],
     "semicolon": false
-  }
+  },
+  "files": [
+    "modules",
+    "LICENSE",
+    "README.md"
+  ]
 }
