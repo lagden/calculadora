@@ -1,6 +1,7 @@
 'use strict'
 
 import test from 'ava'
+
 import soma from '../modules/soma'
 import subtracao from '../modules/subtracao'
 import divisao from '../modules/divisao'
@@ -33,6 +34,6 @@ test('subtracao', t => {
 })
 
 test('calculadora', t => {
-	const calc = calculadora().plus(5, 5).less(7)
-	t.is(calc.total, 3)
+	const calc = calculadora().plus(5, 5).less(-8).div(3, 2).mult(10)
+	t.is(calc.total, 30)
 })
